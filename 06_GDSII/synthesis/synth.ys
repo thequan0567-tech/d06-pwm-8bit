@@ -1,0 +1,11 @@
+read_verilog -sv rtl/d06_pwm_8bit.sv
+read_verilog -sv rtl/d06_pwm_8bit_explicit.sv
+hierarchy -check -top d06_pwm_8bit_explicit
+proc; opt; fsm; opt; memory; opt; techmap; opt
+dfflibmap -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+setundef -zero
+splitnets
+opt_clean -purge
+tee -o 06_GDSII/synthesis/synth_stat.txt stat -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog -noattr 06_GDSII/synthesis/netlist.v

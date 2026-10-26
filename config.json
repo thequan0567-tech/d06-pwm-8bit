@@ -1,0 +1,21 @@
+{
+  "DESIGN_NAME": "d06_pwm_8bit_explicit",
+  "VERILOG_FILES": [
+    "dir::rtl/d06_pwm_8bit.sv",
+    "dir::rtl/d06_pwm_8bit_explicit.sv"
+  ],
+  "PNR_SDC_FILE": "dir::04_IMPLEMENTATION/constraints/design.sdc",
+  "SIGNOFF_SDC_FILE": "dir::04_IMPLEMENTATION/constraints/design.sdc",
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10.0,
+  "PDK": "sky130A",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "FP_SIZING": "absolute",
+  "DIE_AREA": [0, 0, 160, 100],
+  "PL_TARGET_DENSITY_PCT": 35,
+  "RUN_CTS": true,
+  "RUN_LINTER": true,
+  "RUN_KLAYOUT_DRC": true,
+  "RUN_MAGIC_DRC": true,
+  "RUN_LVS": true
+}
