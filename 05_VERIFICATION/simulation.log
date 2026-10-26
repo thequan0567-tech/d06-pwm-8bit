@@ -1,0 +1,3 @@
+VCD info: dumpfile d06_wave.vcd opened for output.
+D06 TB PASS
+tb/d06_tb.sv:94: $finish called at 15435000 (1ps)
