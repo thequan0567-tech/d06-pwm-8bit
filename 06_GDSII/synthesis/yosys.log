@@ -594,6 +594,6 @@ Removed 0 unused cells and 127 unused wires.
 18.2. Executing DEMUXMAP pass.
 Dumping module `\d06_pwm_8bit_explicit'.
 
-End of script. Logfile hash: 4fefab4a54, CPU: user 0.17s system 0.04s, MEM: 42.39 MB peak
+End of script. Logfile hash: 4fefab4a54, CPU: user 0.20s system 0.12s, MEM: 42.20 MB peak
 Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)
-Time spent: 58% 1x abc (0 sec), 16% 1x dfflibmap (0 sec), ...
+Time spent: 49% 1x abc (0 sec), 27% 1x dfflibmap (0 sec), ...
